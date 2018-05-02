@@ -1,0 +1,7 @@
+A Subquery is simply a select statement, that returns a single value and can be nested inside a SELECT,INSERT,UPDATE, OR DELETE
+STATEMENT. It is also possible to nest a subquery inside another subquery. According to MSDN, subqueries can be nested upto 
+32 levels.
+
+Subqueries are always enclosed in paranthesis and are also called as inner queries, and the query containing the subquery is called
+as outer query. The columns from a table that is present only inside a subquery, cannot be used in the SELECT list of the 
+outer query.
