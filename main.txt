@@ -5,3 +5,18 @@ STATEMENT. It is also possible to nest a subquery inside another subquery. Accor
 Subqueries are always enclosed in paranthesis and are also called as inner queries, and the query containing the subquery is called
 as outer query. The columns from a table that is present only inside a subquery, cannot be used in the SELECT list of the 
 outer query.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Correlated Subquery
+
+If the subquery depends on the outer query for its values, then that sub query is called as correlated subquery
+
+In the where clause of the subquery below, "ProductID" column get its value from tblProducts table that is present in the outer
+query.
+
+So, here the subquery is dependent on the outer query for its value, hence its  subquery is a correlated subquery
+
+Correlated subqueries get executed, once for every row that is selected by the outer query.
+
+Correlated subquery, cannot be executed independently of the outer query.
